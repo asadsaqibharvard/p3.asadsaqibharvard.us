@@ -1,0 +1,21 @@
+body {
+	background-image: url('../images/background.jpg');
+}
+
+* {
+	font-family: Arial;
+	color: white;
+}
+
+h1 {	
+	text-align:center;
+	font-size:30px;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+h2 {
+	font-size:15px;
+	margin-top:30px;
+	margin-bottom:5px;
+}
