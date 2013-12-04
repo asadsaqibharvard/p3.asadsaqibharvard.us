@@ -20,3 +20,7 @@
 	height: 157px;
 	background-image: url('../images/lowerbody.png');
 }
+
+.error {
+	color:red;
+}
