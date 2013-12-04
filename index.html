@@ -20,10 +20,11 @@
 	<h1>Workout Schedule</h1>
 
 		<!-- Name -->	
+		<div id='namediv'>
 			<h2>Name:</h2>	
 			<input type='text' id='name' maxlength='20'> 
 			<span class='error' id='name-error'></span>
-			
+		</div>
 
 		<!-- Select a body part -->
 		<div id='bodyparts'>
@@ -36,6 +37,44 @@
 				<a href="http://www.lifeofanarchitect.com/social-media-superhero/">*Image Reference</a>
 				<br></br>
 		</div>
+
+		<!-- Upper Body Workouts -->
+		<div id='upperbodyworkouts'>
+		
+			<form id="upperbodyform">
+    			<h2>Upper Body Workouts</h2>
+    			<input type="checkbox" name="pullupcheckboxname" id="pullupcheckboxid" />Pull Ups
+    			<input type="text" id="pullupsetsid" name="pullupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="pulluprepsid" name="pulluprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+    			<br></br>
+    			<input type="checkbox" name="pushupcheckboxname" id="pushupcheckboxid" />Push Ups
+    			<input type="text" id="pushupsetsid" name="pushupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="pushuprepsid" name="pushuprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+
+    		</form>
+
+		</div>
+
+
+		<div id='coreworkouts'>
+		
+			<form id="coreform">
+    			<h2>Core Workouts</h2>
+    			<input type="checkbox" name="situpcheckboxname" id="pullupcheckboxid" />Sit Ups
+    			<input type="text" id="situpsetsid" name="situpsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="situprepsid" name="situprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+    			<br></br>
+    			<input type="checkbox" name="rowcheckboxname" id="rowcheckboxid" />Row
+    			<input type="text" id="rowsetsid" name="rowupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="rowuprepsid" name="rowuprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+
+    		</form>
+
+		</div>
+
+
+
+
 </div>
 
 	<script src="js/p3.js"></script>

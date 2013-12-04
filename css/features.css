@@ -1,6 +1,11 @@
+/*max character red font color*/
+.error {
+	color:red;
+}
+
+/*display properties for the body images*/
 .bodypart {
 	width: 425px;
-	
 	border: 1px solid grey;
 	margin-bottom: 5px;
 	cursor: pointer;
@@ -21,6 +26,20 @@
 	background-image: url('../images/lowerbody.png');
 }
 
-.error {
-	color:red;
+
+/*hide workouts until selected on the image*/
+#upperbodyworkouts {
+	display: none;
+	position: absolute;
+}
+
+#coreworkouts {
+	display: none;
+	position: absolute;
+}
+
+
+#lowerbodyworkouts {
+	display: none;
+	position: absolute;
 }

@@ -8,7 +8,7 @@ $('#name').keyup(function() {
 	
 	// Inject the name into the output div on the workout schedule
 	$('#name-output').html(name);
-	
+
 	// How long was the recipient?
 	var length = name.length;
 	
@@ -25,3 +25,50 @@ $('#name').keyup(function() {
 	// <input type='text' id='recipient' maxlength="14"> 
 	
 });
+
+
+/*-------------------------------------------------------------------------------------------------
+Display workout selections when click on images 
+-------------------------------------------------------------------------------------------------*/
+
+/*<img id="img1"/>
+<img id="img2"/>
+<div id="div1"/>
+<div id="div2"/>
+<div id="div3"/>
+<div id="div4"/>
+*/
+
+
+$("#upperbody").on('click', function() {
+   $("#upperbodyworkouts").fadeIn();
+   $("#coreworkouts").fadeOut();
+   $("#lowerbodyworkouts").fadeOut();
+});
+
+$("#core").on('click', function() {
+   $("#upperbodyworkouts").fadeOut();
+   $("#coreworkouts").fadeIn();
+   $("#lowerbodyworkouts").fadeOut();  
+});
+
+$("#lowerbody").on('click', function() {
+   $("#upperbodyworkouts").fadeOut();
+   $("#coreworkouts").fadeOut();
+   $("#lowerbodyworkouts").fadeIn();  
+});
+
+
+
+/*-------------------------------------------------------------------------------------------------
+Workout Checkboxes
+-------------------------------------------------------------------------------------------------*/
+
+$(function() {
+    $('#pullupcheckboxid, #pushupcheckboxid').click(function() {
+        var pullup1 = $('#pullupcheckboxid').is(':checked');
+        var pushup2 = $('#pushupcheckboxid').is(':checked');
+        $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
+        $('#pushuprepsid, #pushupsetsid').prop('disabled', !pushup2);    
+    });
+})
