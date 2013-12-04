@@ -24,3 +24,29 @@ input[type=text] {
 	font-size:16px;
 	color: black;
 }
+
+a {
+	font-size: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrapper {
+	width:960px;
+	margin:0px auto;
+}
+
+/* Left column */
+#controls {
+	width:500px;
+	margin-right:50px;
+	float:left;
+}
+
+/* Right column */
+#workoutschedule {
+	width:400px;
+	float:left;
+	text-align:center;
+}

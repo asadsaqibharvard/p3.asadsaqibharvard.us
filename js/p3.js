@@ -27,6 +27,7 @@ $('#name').keyup(function() {
 });
 
 
+
 /*-------------------------------------------------------------------------------------------------
 Display workout selections when click on images 
 -------------------------------------------------------------------------------------------------*/
@@ -64,11 +65,19 @@ $("#lowerbody").on('click', function() {
 Workout Checkboxes
 -------------------------------------------------------------------------------------------------*/
 
-$(function() {
-    $('#pullupcheckboxid, #pushupcheckboxid').click(function() {
+$("#pullupcheckboxid", "#pushupcheckboxid").on('click', function() {
+	 var pullup1 = $('#pullupcheckboxid').is(':checked');
+	 var pushup2 = $('#pushupcheckboxid').is(':checked');
+	 $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
+	 $('#pushuprepsid, #pushupsetsid').prop('disabled', !pushup2);
+});
+
+    /*
+    	$('#pullupcheckboxid, #pushupcheckboxid').click(function() {
         var pullup1 = $('#pullupcheckboxid').is(':checked');
         var pushup2 = $('#pushupcheckboxid').is(':checked');
         $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
         $('#pushuprepsid, #pushupsetsid').prop('disabled', !pushup2);    
     });
 })
+	*/

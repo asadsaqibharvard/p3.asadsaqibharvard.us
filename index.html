@@ -19,11 +19,15 @@
 
 	<h1>Workout Schedule</h1>
 
+	<div id='controls'>
+
 		<!-- Name -->	
 		<div id='namediv'>
 			<h2>Name:</h2>	
 			<input type='text' id='name' maxlength='20'> 
 			<span class='error' id='name-error'></span>
+			<h2>Date:</h2> 
+			<input type="text" id="date">
 		</div>
 
 		<!-- Select a body part -->
@@ -40,7 +44,6 @@
 
 		<!-- Upper Body Workouts -->
 		<div id='upperbodyworkouts'>
-		
 			<form id="upperbodyform">
     			<h2>Upper Body Workouts</h2>
     			<input type="checkbox" name="pullupcheckboxname" id="pullupcheckboxid" />Pull Ups
@@ -50,14 +53,11 @@
     			<input type="checkbox" name="pushupcheckboxname" id="pushupcheckboxid" />Push Ups
     			<input type="text" id="pushupsetsid" name="pushupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
     			<input type="text" id="pushuprepsid" name="pushuprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
-
     		</form>
-
 		</div>
 
-
+		<!-- Core Workouts -->
 		<div id='coreworkouts'>
-		
 			<form id="coreform">
     			<h2>Core Workouts</h2>
     			<input type="checkbox" name="situpcheckboxname" id="pullupcheckboxid" />Sit Ups
@@ -67,12 +67,39 @@
     			<input type="checkbox" name="rowcheckboxname" id="rowcheckboxid" />Row
     			<input type="text" id="rowsetsid" name="rowupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
     			<input type="text" id="rowuprepsid" name="rowuprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
-
     		</form>
-
 		</div>
 
 
+		<!-- Lower Body Workouts -->
+		<div id='lowerbodyworkouts'>
+			<form id="lowerbodyform">
+    			<h2>Lower Body Workouts</h2>
+    			<input type="checkbox" name="legextensioncheckboxname" id="legextensioncheckboxid" />Leg Extensions
+    			<input type="text" id="legextensionsetsid" name="legextensionsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="legextensionrepsid" name="legextensionrepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+    			<br></br>
+    			<input type="checkbox" name="squatcheckboxname" id="squatcheckboxid" />Squats
+    			<input type="text" id="squatsetsid" name="squatupsetsname" placeholder="# of Sets" disabled maxlength='2' size='5'/>
+    			<input type="text" id="squatuprepsid" name="squatuprepsname" placeholder="# of Reps" disabled maxlength='2' size='5'/>
+    		</form>
+		</div>
+
+	</div>
+
+		<!-- Live preview of workout schedule-->
+		<div id='workoutschedule'>
+		
+			<div id='schedule-background'>
+				<div id='schedule'>
+					<div id='message-output'></div>
+					<div id='recipient-output'></div>
+				</div>
+			</div>
+			
+			<!-- Buttons -->
+			<input type='button' id='printbutton' value='Print'>
+		</div>
 
 
 </div>
