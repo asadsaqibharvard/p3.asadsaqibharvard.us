@@ -63,15 +63,31 @@ Workout Schedule
 	position:relative;
 	top:33px;
 	left:16px;
-	background-color: blue;
+	background-color: #92A4B0;
 	z-index:-1; 
 	overflow:hidden;
+	border: 3px solid white;
 }
 
-#workouttitle{
-	font: black;
+#workoutlabels {
+	text-align: left;
+	text-decoration: underline;
+	margin-left: 20px;
+	float: left;
 }
 
+#setstitle {
+	text-align: center;
+	text-decoration: underline;
+	float: left;
+	padding-left: 100px;
+}
+
+#repstitle {
+	text-align: right;
+	text-decoration: underline;
+	margin-right: 20px;
+}
 
 /*-------------------------------------------------------------------------------------------------
 Buttons
