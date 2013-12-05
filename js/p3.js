@@ -29,7 +29,42 @@ $('#name').keyup(function() {
 
 
 /*-------------------------------------------------------------------------------------------------
-Display workout selections when click on images 
+Workout Selections displayed on Workout Schedule
+-------------------------------------------------------------------------------------------------
+$('.messages').click(function() {
+
+	 // Which radio button was clicked?
+	 // (Note here how we're storing a whole element in a variable... cool, huh?)
+	 var radio_button = $(this);
+
+	 // What is the label next to (i.e. after) that radio 
+	 var label = radio_button.next();
+
+	 // Now that we know the label, grab the text inside of it (That's our message!)
+	 var message = label.html();
+		
+	$('#message-output').html(message);
+	
+});
+*/
+
+
+
+$('input[name=message1]').click(function(){
+
+	//Get the label element that comes immediately after this radio button
+	var label = $(this).next();
+
+	//From the label element extract the inner HTML - i.e. what the message is
+	var message1 = label.html();
+
+	console.log(message1);
+});
+
+
+
+/*-------------------------------------------------------------------------------------------------
+Display workout selections below regions when click on images 
 -------------------------------------------------------------------------------------------------*/
 
 $("#upperbody").on('click', function() {
