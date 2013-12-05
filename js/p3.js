@@ -61,6 +61,11 @@ $("#pullupcheckboxid").on('click', function() {
 	 $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
 });
 
+$("#pushupcheckboxid").on('click', function() {
+	 var pushup1 = $('#pushupcheckboxid').is(':checked');
+	 $('#pushupsetsid, #pushuprepsid').prop('disabled', !pushup1);
+});
+
 
     /*
     	$('#pullupcheckboxid, #pushupcheckboxid').click(function() {
