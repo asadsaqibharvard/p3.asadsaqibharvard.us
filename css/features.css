@@ -28,6 +28,12 @@
 
 
 /*hide workouts until selected on the image*/
+.workouts {
+	display: none;
+	position: absolute;
+}
+
+/*
 #upperbodyworkouts {
 	display: none;
 	position: absolute;
@@ -42,4 +48,11 @@
 #lowerbodyworkouts {
 	display: none;
 	position: absolute;
+}
+
+*/
+
+
+input[type="text"][disabled] {
+   color: red;
 }

@@ -32,15 +32,6 @@ $('#name').keyup(function() {
 Display workout selections when click on images 
 -------------------------------------------------------------------------------------------------*/
 
-/*<img id="img1"/>
-<img id="img2"/>
-<div id="div1"/>
-<div id="div2"/>
-<div id="div3"/>
-<div id="div4"/>
-*/
-
-
 $("#upperbody").on('click', function() {
    $("#upperbodyworkouts").fadeIn();
    $("#coreworkouts").fadeOut();
@@ -62,15 +53,14 @@ $("#lowerbody").on('click', function() {
 
 
 /*-------------------------------------------------------------------------------------------------
-Workout Checkboxes
+Workout Checkboxes & Associated input boxes enabled/disabled 
 -------------------------------------------------------------------------------------------------*/
 
-$("#pullupcheckboxid", "#pushupcheckboxid").on('click', function() {
+$("#pullupcheckboxid").on('click', function() {
 	 var pullup1 = $('#pullupcheckboxid').is(':checked');
-	 var pushup2 = $('#pushupcheckboxid').is(':checked');
 	 $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
-	 $('#pushuprepsid, #pushupsetsid').prop('disabled', !pushup2);
 });
+
 
     /*
     	$('#pullupcheckboxid, #pushupcheckboxid').click(function() {
