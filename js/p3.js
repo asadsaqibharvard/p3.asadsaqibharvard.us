@@ -66,6 +66,25 @@ $("#pushupcheckboxid").on('click', function() {
 	 $('#pushupsetsid, #pushuprepsid').prop('disabled', !pushup1);
 });
 
+$("#situpcheckboxid").on('click', function() {
+	 var situp1 = $('#situpcheckboxid').is(':checked');
+	 $('#situpsetsid, #situprepsid').prop('disabled', !situp1);
+});
+
+$("#rowcheckboxid").on('click', function() {
+	 var row1 = $('#rowcheckboxid').is(':checked');
+	 $('#rowsetsid, #rowuprepsid').prop('disabled', !row1);
+});
+
+$("#legextensioncheckboxid").on('click', function() {
+	 var legextension1 = $('#legextensioncheckboxid').is(':checked');
+	 $('#legextensionsetsid, #legextensionrepsid').prop('disabled', !legextension1);
+});
+
+$("#squatcheckboxid").on('click', function() {
+	 var squat1 = $('#squatcheckboxid').is(':checked');
+	 $('#squatsetsid, #squatuprepsid').prop('disabled', !squat1);
+});
 
     /*
     	$('#pullupcheckboxid, #pushupcheckboxid').click(function() {

@@ -58,8 +58,8 @@ Layout
 Workout Schedule
 -------------------------------------------------------------------------------------------------*/
 #schedule {
-	width:338px;
-	height:469px;
+	width:375px;
+	height:550px;
 	position:relative;
 	top:33px;
 	left:16px;
@@ -68,11 +68,15 @@ Workout Schedule
 	overflow:hidden;
 }
 
+#workouttitle{
+	font: black;
+}
+
 
 /*-------------------------------------------------------------------------------------------------
 Buttons
 -------------------------------------------------------------------------------------------------*/
-.printbutton {
+input[type=button] {
 	-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
 	box-shadow:inset 0px 1px 0px 0px #cae3fc;
@@ -108,14 +112,14 @@ Buttons
 	text-shadow:1px 1px 0px #287ace;
 }
 
-.printbutton:hover {
+input[type=button] {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
 	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
 	background-color:#4197ee;
 }
 
-.printbutton:active {
+input[type=button] {
 	position:relative;
 	top:1px;
 }

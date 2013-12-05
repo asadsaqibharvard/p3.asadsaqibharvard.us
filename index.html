@@ -34,7 +34,7 @@
 		<div id='bodyparts'>
 		
 			<!-- Body region picker -->
-				<h2>Select a region to work out</h2>
+				<h2>Select A Region and Workouts Will Be Displayed Below</h2>
 				<div class='bodypart' id='upperbody'></div>
 				<div class='bodypart' id='core'></div>
 				<div class='bodypart' id='lowerbody'></div>
@@ -62,7 +62,7 @@
 		<div class ='workouts' id='coreworkouts'>
 			<form id="coreform">
     			<h2>Core Workouts</h2>
-    			<input type="checkbox" name="situpcheckboxname" id="pullupcheckboxid" class="workoutcheckbox"/>Sit Ups
+    			<input type="checkbox" name="situpcheckboxname" id="situpcheckboxid" class="workoutcheckbox"/>Sit Ups
     			<input type="number" min="0" id="situpsetsid" class="workoutsets" name="situpsetsname" placeholder="# of Sets" disabled/>
     			<input type="number" min="0" id="situprepsid" class="workoutreps" name="situprepsname" placeholder="# of Reps" disabled/>
     			<br></br>
@@ -92,12 +92,15 @@
 		<!-- Live preview of workout schedule-->
 		<div id='workoutschedule'>
 				<div id='schedule'>
+					<h2 id='workouttitle'> Workout Schedule for: </h2>
 					<div id='name-output'></div>
 					<div id='workout-output'></div>
 					<div id='set-output'></div>
 					<div id='reps-output'></div>
 				</div>
 			<!-- Buttons -->
+			<br></br>
+			<input type='button' id='refresh-btn' value='Start over'>
 			<input type='button' class='printbutton' value='Print'>
 		</div>
 
