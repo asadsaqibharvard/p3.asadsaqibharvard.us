@@ -33,26 +33,6 @@
 	position: absolute;
 }
 
-/*
-#upperbodyworkouts {
-	display: none;
-	position: absolute;
-}
-
-#coreworkouts {
-	display: none;
-	position: absolute;
-}
 
 
-#lowerbodyworkouts {
-	display: none;
-	position: absolute;
-}
 
-*/
-
-
-input[type="text"][disabled] {
-   color: red;
-}

@@ -63,8 +63,8 @@ Workout Schedule
 	position:relative;
 	top:33px;
 	left:16px;
-	background-color: white;
-	z-index:1; /* So we can place the stickers above */
+	background-color: blue;
+	z-index:-1; 
 	overflow:hidden;
 }
 
