@@ -49,16 +49,23 @@ $('.messages').click(function() {
 */
 
 
+/*-------------------------------------------------------------------------------------------------
+Display checkbox label on workout schedule
+-------------------------------------------------------------------------------------------------*/
+$('.checkboxclass').click(function() {
 
-$('input[name=message1]').click(function(){
+	 // Which checkbox was clicked?
+	 // (Note here how we're storing a whole element in a variable... cool, huh?)
+	 var checkboxvariable = $(this);
 
-	//Get the label element that comes immediately after this radio button
-	var label = $(this).next();
+	 // What is the label next to (i.e. after) that radio 
+	 var label1 = checkboxvariable.next();
 
-	//From the label element extract the inner HTML - i.e. what the message is
-	var message1 = label.html();
-
-	console.log(message1);
+	 // Now that we know the label, grab the text inside of it (That's our message!)
+	 var message1 = label1.html();
+		
+	$('#message-output').html(message1);
+	
 });
 
 
