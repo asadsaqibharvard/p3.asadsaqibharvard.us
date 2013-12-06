@@ -89,6 +89,27 @@ Workout Schedule
 	margin-right: 20px;
 }
 
+.workoutdiv{
+	display: none;
+}
+
+.title{
+	text-align: left;
+	margin-left: 20px;
+	float: left;
+}
+
+.set{
+	text-align: left;
+	padding-left: 110px;
+	float: left;
+}
+
+.rep{
+	text-align: right;
+	margin-right: 30px;
+}
+
 /*-------------------------------------------------------------------------------------------------
 Buttons
 -------------------------------------------------------------------------------------------------*/
