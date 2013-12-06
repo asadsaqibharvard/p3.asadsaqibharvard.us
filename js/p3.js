@@ -213,7 +213,7 @@ $("#legextensioncheckboxid").on('click', function() {
 
 $("#squatcheckboxid").on('click', function() {
 	 var squat1 = $('#squatcheckboxid').is(':checked');
-	 $('#squatsetsid, #squatuprepsid').prop('disabled', !squat1);
+	 $('#squatsetsid, #squatrepsid').prop('disabled', !squat1);
 	 
 	 if(squat1){
 	 	$('#squatdiv').show();

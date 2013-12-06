@@ -95,19 +95,21 @@ Workout Schedule
 
 .title{
 	text-align: left;
-	margin-left: 20px;
 	float: left;
+	width: 200px;
+	margin-left: 5px;
 }
 
 .set{
 	text-align: left;
-	padding-left: 110px;
+	width: 100px;
 	float: left;
 }
 
 .rep{
 	text-align: right;
-	margin-right: 30px;
+	width: 50px;
+	float: left;
 }
 
 /*-------------------------------------------------------------------------------------------------
