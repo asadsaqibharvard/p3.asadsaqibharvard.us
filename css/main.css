@@ -96,20 +96,22 @@ Workout Schedule
 .title{
 	text-align: left;
 	float: left;
-	width: 200px;
-	margin-left: 5px;
+	width: 150px;
+	margin-left: 20px;
 }
 
 .set{
 	text-align: left;
 	width: 100px;
 	float: left;
+	margin-left: 18px;
 }
 
 .rep{
 	text-align: right;
 	width: 50px;
 	float: left;
+	margin-left: 5px;	
 }
 
 /*-------------------------------------------------------------------------------------------------
