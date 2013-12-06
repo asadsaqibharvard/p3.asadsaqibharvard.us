@@ -92,23 +92,8 @@ function clearWorkOut(item){
 }
 
 /*-------------------------------------------------------------------------------------------------
-Display checkbox label on workout schedule
+Refresh Schedule
 -------------------------------------------------------------------------------------------------*/
-$('.checkboxclass').click(function() {
-
-	 // Which checkbox was clicked?
-	 // (Note here how we're storing a whole element in a variable... cool, huh?)
-	 var checkboxvariable = $(this);
-
-	 // What is the label next to (i.e. after) that radio 
-	 var label1 = checkboxvariable.next();
-
-	 // Now that we know the label, grab the text inside of it (That's our message!)
-	 var message1 = label1.html();
-		
-	$('#message-output').html(message1);
-	
-});
 
 
 $(function(){
@@ -148,7 +133,7 @@ $("#lowerbody").on('click', function() {
 
 
 /*-------------------------------------------------------------------------------------------------
-Workout Checkboxes & Associated input boxes enabled/disabled 
+Workout Checkboxes & Associated input boxes show/hide on schedule 
 -------------------------------------------------------------------------------------------------*/
 
 $("#pullupcheckboxid").on('click', function() {
@@ -224,12 +209,4 @@ $("#squatcheckboxid").on('click', function() {
 });
 
 
-    /*
-    	$('#pullupcheckboxid, #pushupcheckboxid').click(function() {
-        var pullup1 = $('#pullupcheckboxid').is(':checked');
-        var pushup2 = $('#pushupcheckboxid').is(':checked');
-        $('#pulluprepsid, #pullupsetsid').prop('disabled', !pullup1);
-        $('#pushuprepsid, #pushupsetsid').prop('disabled', !pushup2);    
-    });
-})
-	*/
+    
