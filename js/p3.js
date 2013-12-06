@@ -22,7 +22,7 @@ $('#name').keyup(function() {
 	}
 	
 	// Note: The "maxlength" attribute on the HTML element will prevent the user from entering more than 20 characters
-	// <input type='text' id='recipient' maxlength="14"> 
+
 	
 });
 
@@ -30,23 +30,7 @@ $('#name').keyup(function() {
 
 /*-------------------------------------------------------------------------------------------------
 Workout Selections displayed on Workout Schedule
--------------------------------------------------------------------------------------------------
-$('.messages').click(function() {
-
-	 // Which radio button was clicked?
-	 // (Note here how we're storing a whole element in a variable... cool, huh?)
-	 var radio_button = $(this);
-
-	 // What is the label next to (i.e. after) that radio 
-	 var label = radio_button.next();
-
-	 // Now that we know the label, grab the text inside of it (That's our message!)
-	 var message = label.html();
-		
-	$('#message-output').html(message);
-	
-});
-*/
+-------------------------------------------------------------------------------------------------*/
 $(function(){
 	$('#pullupsetsid,#pulluprepsid').change(function(){
 		showWorkOut('pullup');
@@ -73,6 +57,8 @@ $(function(){
 	});
 });
 
+
+/*Display Sets & Reps dynamically as they are updated */
 function showWorkOut(item){
 	var workout =  $('#' + item + 'labelid').text();
 	var sets = $('#' + item + 'setsid').val();
